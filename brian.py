@@ -16,13 +16,14 @@ ScriptDir = pathlib.Path().absolute()
 logging.basicConfig(level=logging.WARNING)
 warnings.simplefilter("ignore")
 
-website = r"F:\chatbot\ai\Ai projects\personal ai with face\brian.html" # Enter path to your html file
+website = r"C:\Users\rosha\Documents\mini auto\Personal-Assistant---Project\brian.html" # Enter path to your html file
 model_option = Options()
 user_agent = 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.2 (KHTML, like Gecko) Chrome/22.0.1216.0 Safari/537.2'
 model_option.add_argument("user-agent={user_agent}")
 # model_option.add_argument("--profile-directory=Default")
 # model_option.add_argument(f"user-data-dir={ScriptDir}\\Voicdata")
 model_option.headless=True
+
 model_option.add_argument("--headless=new")
 service = Service(ChromeDriverManager().install())
 driver = webdriver.Chrome(service=service,options=model_option )

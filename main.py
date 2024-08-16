@@ -126,8 +126,8 @@ entry_animations()
 
 while True:
     wait_for_audio()
-    # prompt = input("Enter your query : ")
-    prompt = listening_function()
+    prompt = input("Enter your query : ")
+    # prompt = listening_function()
     prompt = str(prompt).lower()
 
     if prompt !="":
